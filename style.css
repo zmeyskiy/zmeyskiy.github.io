@@ -1,0 +1,79 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/* Стили шапки */
+header {
+	background-color: #fff;
+	color: #333;
+	padding: 20px;
+}
+
+/* Стили навигации */
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Стили главного контента */
+main {
+	padding: 20px;
+}
+
+/* Стили секций */
+section {
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+th {
+	background-color: #333;
+	color: #fff;
+}
+
+/* Стили подвала */
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
