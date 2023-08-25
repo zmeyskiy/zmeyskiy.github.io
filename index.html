@@ -1,54 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Мой сайт</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnakeScript Documentation</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-	<header>
-		<h1>Добро пожаловать на мой сайт!</h1>
-	</header>
-	<nav>
-		<ul class="main-menu">
-			<li><a href="#">Главная</a></li>
-			<li><a href="#">О нас</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
-	</nav>
-	<main>
-		<section>
-			<h2>Наши услуги</h2>
-			<ul>
-				<li>Веб-дизайн</li>
-				<li>Разработка веб-приложений</li>
-				<li>Техническая поддержка веб-сайтов</li>
-			</ul>
-		</section>
-		<section>
-			<h2>Каталог продукции</h2>
-			<table>
-				<thead>
-					<tr>
-						<th>Продукт</th>
-						<th>Цена</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Ноутбук ASUS</td>
-						<td>25000 руб.</td>
-					</tr>
-					<tr>
-						<td>Смартфон Samsung</td>
-						<td>15000 руб.</td>
-					</tr>
-				</tbody>
-			</table>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; Мой сайт, 2022</p>
-	</footer>
+  <header>
+    <h1>SnakeScript - Документация</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#introduction">Введение</a></li>
+      <li><a href="#syntax">Синтаксис</a></li>
+      <li><a href="#variables">Переменные</a></li>
+      <li><a href="#functions">Классы</a></li>
+      <li><a href="#examples">Примеры</a></li>
+      <li><a href="#conclusion">Заключение</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="introduction">
+      <h2>Введение</h2>
+      <p>Чтобы начать понимать Snake Script, много ума не надо. Для этого достаточно выучить функции этого ЯП.</p>
+    </section>
+
+    <section id="syntax">
+      <h2>Синтаксис</h2>
+      <p>Синтаксис в языке достаточно простой, пишешь название функции, и в конце: ";"</p>
+    </section>
+
+    <section id="variables">
+      <h2>Переменные</h2>
+      <p>В нашем языке есть такие переменные как: path, int, string. path - Тот же string, но который используется для обозначение путей, и умеет обрабатывать: "\", int - Переменная которая хранит в себе целые числа, например: int a = 1;, string - Переменная которая хранит в себе текст.</p>
+    </section>
+
+    <section id="functions">
+      <h2>Класс System</h2>
+      <p>Имеет в себе такие функции как:<p>
+	  <p>System.print("текст"); - Функция которая выводит текст, принимает аргументы: string, path.</p>
+	  <p>System.BSOD(); - Вызывает BSOD, (Blue Screen Of Death).</p>
+	  <p>System.wait(число); - Ожидает перед выполнением следующей строки, (В миллисекундах)</p>
+	  <p>System.setLocale = Locale.RU; - Устанавливает русский язык для вывода в консоль</p>
+	  <p>System.execute("комманда"); - Выполняет указанную комманду в консоли, например tasklist</p>
+    </section>
+	<section id="classScript">
+	  <h2>Класс Script</h2>
+	  <p>Имеет в себе такие функции как:</p>
+	  <p>Script.end(); - Обрывает скрипт, и его выполнение заканчивается</p>
+	</section>
+    <section id="classNetwork">
+      <h2>Класс Network</h2>
+      <p>Имеет в себе такие функции как:</p>
+	  <p>Network.downloadFile("источник", "путь в который будет установлен файл"); - Скачивает файл из ссылки, до тех пор пока не скачает, после скачивания продолжит скрипт.</p>
+	  <p>Network.downloadFileAsync("источник", "путь в который будет установлен файл"); - Скачивает файл из ссылки, и в это же время продолжает выполнять скрипт.</p>
+	</section>
+	<section id="classRender">
+      <h2>Класс Render</h2>
+	  <p>Render.msgBox("текст", "название окна"); - Выводит на экран MessageBox с указанным текстом, и названием окна</p>
+	</section>
+    <section id="examples">
+      <h2>Примеры</h2>
+      <p>Вызов BSOD:</p>
+	  <p>System.BSOD();</P>
+	  <p>Вывод текста:</p>
+	  <p>System.print("тут текст");</p>
+	  <p>Вывод текста, и установка файла:</p>
+	  <p>System.print("Устанавливаем файл...");</p>
+	  <p>Network.downloadFile("www.example.com/file.exe", "C:\Users\zmeyskiy\Downloads\file.exe");</p>
+	  <p>System.print("Файл установлен!");</p>
+    </section>
+
+    <section id="conclusion">
+      <h2>Заключение</h2>
+      <p>Заключительные слова и напутствия для использования вашего языка программирования.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Discord - https://discord.gg/cNwYkw52AW</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
